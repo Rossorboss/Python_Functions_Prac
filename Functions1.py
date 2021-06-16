@@ -87,7 +87,7 @@ def blackjack(a,b,c):
     else:
         return "Bust"
 
-#summer of 69- Return the sum of the numbers in the 'array', except ignore sections of the numbers starting with a 6 and extending all the way to the next 9. Return 0 for no numbers
+#summer of 69- Print the sum of the numbers in the 'array', except ignore sections of the numbers starting with a 6 and extending all the way to the next 9. Return 0 for no numbers
 def summer_69(arr):
     total = 0
     add = True
@@ -105,4 +105,4 @@ def summer_69(arr):
                 add = True
                 break
     print(total)
-summer_69([2, 1, 6, 9, 11])
+summer_69([2, 1, 6, 9, 11])     #this will return 14    2+1 break 6 and 9 then + 11
