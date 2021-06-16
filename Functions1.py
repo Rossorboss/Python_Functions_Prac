@@ -26,3 +26,15 @@ def animal_crackers(text):
 
 animal_crackers('Levelheaded Lama') #This will print True
 animal_crackers('Levelheaded Ama') #this wont print anything
+
+#Makes 20. given 2 int return True if the sum is 20,or if 1 of the int is 20 if not retun false
+def makes_twenty(n1,n2):
+    if n1 + n2 == 20:
+        return True
+    elif n1 == 20:
+        return True
+    elif n2 ==20:
+        return True
+    else:
+        return False
+makes_twenty(10,20)
