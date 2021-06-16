@@ -22,7 +22,7 @@ def animal_crackers(text):
     word1 = wordlist[0][0]
     word2 = wordlist[1][0]
     if word1 == word2:
-        print('True')
+        print('True')  
 
 animal_crackers('Levelheaded Lama') #This will print True
 animal_crackers('Levelheaded Ama') #this wont print anything
@@ -37,4 +37,27 @@ def makes_twenty(n1,n2):
         return True
     else:
         return False
-makes_twenty(10,20)
+makes_twenty(10,20)    #this will show True
+
+#Old Macdonald, write a function that capitalizes the first and 4th letters
+def old_macdonald(name):
+    first_word = name[:1]
+    second_word = name[1:3]
+    third_word = name[3:]
+    full_capital_name = first_word.capitalize() + second_word + third_word.capitalize()
+    print(full_capital_name)
+old_macdonald('macdonald')  #this wil show MacDonald
+
+#Master Yoda- given a sentence, return a sentence with the words reversed
+def master_yoda(text):
+    sentence = text.split()
+    reverse_word_list = sentence[::-1]
+    (reverse_word_list) = ' '.join(reverse_word_list)   # ' '.join changes the list into a string with whatever is inside the () 
+    print(reverse_word_list)
+master_yoda('I am home')    #this will show- home am I
+
+#Almost There- given an integer n, return True if n is within 10 of either 100 or 200
+def almost_there(n):
+    (abs(100-10) <= 10) or (abs(200-n) <= 10)
+    print('True')
+almost_there(91)   #this will return true as it is less than 10
