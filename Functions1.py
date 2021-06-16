@@ -61,3 +61,48 @@ def almost_there(n):
     (abs(100-10) <= 10) or (abs(200-n) <= 10)
     print('True')
 almost_there(91)   #this will return true as it is less than 10
+
+#Find 33 - given a list of ints, True if the array contains a 3 next to a 3 somewhere
+def has_33(nums):
+    for i in range(0,len(nums)-1):      #this will ensue it doesnt error at the end of the listing looking for the next number
+        if nums[i] ==3 and nums[i+1] ==3:
+            return True
+    return False
+has_33([1, 1, 3, 3])   #this will return True
+
+#Paper Dolls- Given a string return a string where for every character in the original there are three characters 
+def paper_dolls(text):
+    result = ''                   # adding empty string, 
+    for char in text:               
+        result += char * 3          #adding character *3 everytime
+    print(result) 
+paper_dolls('hello')
+
+#Blackjack- given 3 integers between 1-11, if their sum is less than or equal to 21 return their sum, if their sum exceeds 21 and theres and 11 reduce the total sum by 10, if the sum stil exceeds 21 then return bust
+def blackjack(a,b,c):
+    if sum([a,b,c]) <= 21:     #sum of abc is less than or equal to 21 return sum
+        return sum([a,b,c])
+    elif 11 in [a,b,c] and sum([a,b,c])-10 <= 21:     #if 11 is in abc, and the sum of abc -10 for the 11 is less than or equal to 21
+        return sum([a,b,c])-10                         # returns the sum of abc -10 for the 11
+    else:
+        return "Bust"
+
+#summer of 69- Return the sum of the numbers in the 'array', except ignore sections of the numbers starting with a 6 and extending all the way to the next 9. Return 0 for no numbers
+def summer_69(arr):
+    total = 0
+    add = True
+    for num in arr:            #this first loop will tell it to add if the number is not =6, it will then break the loop at 6
+        while add:
+            if num!= 6:
+                total += num
+                break
+            else:                     
+                add = False 
+        while not add:            #as the numbers at not = 9 it will continue to not add untill it hits 9 then it will break
+            if num!= 9:
+                break
+            else:                 #it will then contiune to add
+                add = True
+                break
+    print(total)
+summer_69([2, 1, 6, 9, 11])
