@@ -131,3 +131,30 @@ divisable_by_five(10, 20 , 36, 41, 50)
 #20
 #50
 
+#Print first 10 numbers
+i = 0
+while i <= 10:
+    print(i)
+    i += 1
+
+#Print Number triangle pattern
+lastnumber=7
+for row in range(1, lastnumber):
+    for column in range(1, row +1):
+        print(column, end=' ')
+    print('')
+#1
+#12
+#123
+#1234
+#12345
+#123456
+
+#Multiplication Table
+def multiplication_table(x):
+    for i in range(1, 13,):     #thiis will return the multiplication table of x up untill x12 e.g 9x12
+        product = x*i
+        print(product)
+
+multiplication_table(9)       #9 times table
+
