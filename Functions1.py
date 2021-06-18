@@ -157,4 +157,8 @@ def multiplication_table(x):
         print(product)
 
 multiplication_table(9)       #9 times table
-
+def multiplication_table(x):
+    for i in range(1, 13,):   #9x table up to x12
+        product = x*i
+        print(product)
+    
