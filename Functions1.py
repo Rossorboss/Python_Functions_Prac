@@ -106,3 +106,28 @@ def summer_69(arr):
                 break
     print(total)
 summer_69([2, 1, 6, 9, 11])     #this will return 14    2+1 break 6 and 9 then + 11
+
+#List of numbers - print the list of numbers and returning True or Flase if the first and last number match
+
+def list_of_numbers(nums):          
+    print('Given list is',nums)
+    if nums[0] == nums[-1]:
+        return True
+    else:
+        return False
+list_of_numbers([10, 20, 30, 40, 20])
+#This will return =  Given list is [10, 20, 30, 40, 20] (and return False)
+
+#Divisable by 5, this will return 'Divisable by 5' and then list the numbers from the list that are divisable by 5
+def divisable_by_five(numlist):
+    print('Divisable of 5 in a list')
+    for num in numlist:
+        if (num %5 == 0):
+            print(num)
+
+divisable_by_five(10, 20 , 36, 41, 50)
+#Divisable of 5 in a list
+#10
+#20
+#50
+
