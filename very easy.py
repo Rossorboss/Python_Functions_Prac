@@ -82,3 +82,59 @@ def circuit_power(i,v):
     watts= i * v
     print(watts)
 circuit_power(480,20)
+
+#The farm problem- how many legs
+def animals(x,y,z):
+    chicken_legs = x * 2
+    cow_legs = y * 4
+    pig_legs = z * 4
+    total_legs = chicken_legs + cow_legs + pig_legs
+    print(total_legs)
+animals(5,2,8)
+
+#Football points
+def football_points(x,y,z):
+    wins = x * 3
+    draws = y * 1
+    z = 0
+    total = wins + draws
+    print(total)
+football_points(3,4,2)
+
+#Basic variable string - concatenate a passed string with Edabit in a variable called result
+def name_string(name):
+    b = 'Edabit'
+    result = name + b
+    print(result)
+name_string('Matt')
+
+#Boolean String conversion
+def bool_to_string(flag):
+    if flag == True:
+        print(True)
+    else:
+        print('False')
+bool_to_string(True)
+
+#Return the first element in a list
+def get_first_value(mylist):
+    print(mylist[0])
+get_first_value([1,2,3,4,5])
+
+#Return the last element in a list
+def get_last_item(mylist):
+    print(mylist[-1])
+get_last_item(['dog', 'cat', 'pig', 'cow'])
+get_last_item([1 , 2, 3, 4, 5])
+
+#string to int and vice vera
+def to_int(x):
+    y = int(x)
+    print(y)
+to_int('10')
+
+def to_str(y):
+    z = str(y)
+    print(z)
+to_str(10)
+
