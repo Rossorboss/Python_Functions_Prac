@@ -138,3 +138,10 @@ def to_str(y):
     print(z)
 to_str(10)
 
+#and operator 
+def And(a,b):
+    if a == False or b == False:
+        print('False')
+    else:
+         print('True')
+And(False,False)
