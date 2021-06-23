@@ -5,7 +5,7 @@ my_nums = [1,2,3,4,5]
 for x in map(square,my_nums):     #the map function allows it to be used numerous times at once
     print(x)
 
-# Luke i am your father example
+# Luke i am your father example--using map to call all 3 at the same time
 def relation_to_luke(name):
     if name == 'Darth Vader':
         return('Luke, I am your father')
