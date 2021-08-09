@@ -76,3 +76,4 @@ def up_low(s):
     print(f'Original String : {s}')
     print(f'No. of Upper case characters : {d["uppercase"]}')
     print(f'No. of Lower case characters : {d["lowercase"]}')
+
