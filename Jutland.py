@@ -33,7 +33,6 @@ def battlecruisers():
     choose_ship = input('Select the ship you would like more detials on: ')
     if choose_ship == (ship_list_rn[0]):
         print(ship_dict_rn[0])
-        choose_ship = input('Select the ship you would like more detials on: ')
     if choose_ship == (ship_list_rn[1]):
         print(ship_dict_rn[1])
     if choose_ship == (ship_list_rn[2]):
@@ -60,6 +59,7 @@ def battlecruisers():
         print(ship_dict_hsf[3])
     if choose_ship ==(ship_list_hsf[4]):
         print(ship_dict_hsf[4])
+        
             
     
 

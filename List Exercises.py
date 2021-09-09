@@ -37,3 +37,4 @@ list9 = [5, 10, 15, 20, 25, 50 ,20]
 index = list9.index(20)
 list9[index] = 200
 print(list9)
+

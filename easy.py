@@ -43,13 +43,44 @@ def mood_today(mood= 'neutral'):   #This sets the default as neutral so if no ar
     print(f'Today I am feeling {mood}')
 mood_today('Happy')
 
-#christmas eve
-import datetime
-def is_it_christmas_eve(datetime.date(year,month,day)):
-    if date.month == 12 and date.date == 24:
-        return True
-        print('True')
+#takes a list and returns a new list with unique elements taken away
+def unique_nums(lst):
+    seen_number = []
+    for number in lst:
+        if number not in seen_number:
+            seen_number.append(number)
+    print(seen_number)
+
+#^^^^using a set def unique_set_nums(lst):
+    return list(set(lst))
+
+#function to multiply all numbers in a list
+import math
+def multiply(numbers):
+    total = math.prod(numbers)
+    print(total)
+
+#function that checks if a word is a palindrome
+def palindrome(s):
+    s = s.replace(' ','')      #removes the spaces
+    if s == s[::-1]:
+        print(f'{s} is a palindrome')
     else:
-        return False
-        print(False)        
-is_it_christmas_eve(datetime.date)
+        print(f'{s} is not a palindrome')
+
+#write a function to check whether a string si a pangram or not (every letter of the alphabet)
+import string
+
+#string.ascii_lowercase   -- will give the lowercase letters ‘abcdefghijklmnopqrstuvwxyz’.
+def ispanagram(strng1, alphabet=string.ascii_lowercase):
+    #create a set of the alphabet
+    alphaset = set(alphabet) 
+    #remove the spaces in user input (strng1)
+    strng1 = strng1.replace(' ','')
+    #convert user input (strng1) into lowercase
+    strng1 = strng1.lower()
+    #grab all the letters from the user input (strng1)
+    strng1 = set(strng1)
+    #alphaset == strng1 (string input)
+    return strng1 == alphaset
+

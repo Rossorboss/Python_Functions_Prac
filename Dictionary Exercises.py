@@ -31,4 +31,6 @@ print(sampleDict)
 
 #check if a value (200) exists in a dictionary 
 sampleDict1 = {'a': 100, 'b': 200, 'c': 300}
-print(200 in sampleDict1.values())
+print(200 in sampleDict1.values())   #This will return True
+
+#rename key (city) t0 (location) in the following dictionary 
